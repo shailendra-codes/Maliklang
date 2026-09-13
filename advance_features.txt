@@ -1,0 +1,19 @@
+bolo "--- Maliklang Super Advance Logic Test ---"
+
+# यूजर से इनपुट मांगना
+bhav pucho "Item ka final bill amount likhein: "
+
+# एडवांस लॉजिक चेक करना (पायथन की तरह)
+agar bhav > 5000
+    bolo "Mubarak ho! Aapko FREE PREMIUM SHIPPING milegi!"
+    banao final_bill = bhav - 500
+
+agar bhav <= 5000
+    bolo "Aapka bill 5000 se kam hai, normal delivery charges lagenge."
+    banao final_bill = bhav + 100
+
+# फाइनल रिजल्ट दिखाना
+bolo "Delivery status ke sath aapka total bill bana: "
+bolo final_bill
+
+bolo "Maliklang Advance Test Safal Hua!"
