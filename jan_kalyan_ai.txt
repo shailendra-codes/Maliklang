@@ -1,0 +1,17 @@
+bolo "--- 🇮🇳 Maliklang Live Jan Kalyan AI Helpline 🇮🇳 ---"
+bolo "Bhai, Bharat ke kisi bhi gaon, tehsil, block ya ward ki samasya likhein."
+
+# 1. यूजर से उसका पूरा पता और समस्या एक साथ पूछना
+location pucho "Apna State, Jila, Tehsil, Block, Gaon ya Ward no. aur apni dikkat (Bhookh/Bimari) likhein: "
+
+bolo "Thoda sabar karein, Live AI aapke sabse najdiki helpline aur sarkari suvidha ko dhundh raha hai..."
+
+# 2. बिना Main.py badle directly Super AI engine se connect karne ki trick (Help System Instructions ke sath)
+banao helpline_data = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'system', 'content': 'You are a Government Welfare & Emergency Emergency Emergency Assistant for India. Based on the user location (village, block, tehsil, ward) and issue (hunger/medical), find the nearest helpline numbers, government schemes (like Ration card/PDS/Ayushman Bharat), nearest government hospital/CHC/PHC, or local administration contact details. Give practical, step-by-step guidance in very simple Hinglish language so a villager can understand and get help immediately.'}, {'role': 'user', 'content': location}]}).json()['choices']['message']['content']
+
+# 3. एआई द्वारा खोजी गई लाइव हेल्पलाइन जानकारी स्क्रीन पर दिखाना
+bolo "--- 🚨 Live AI Ka Samadhan aur Helpline Details: ---"
+bolo helpline_data
+
+bolo "Har nagrik ki madad hi sachhi seva hai! Maliklang Jan Kalyan Test Pass!"
+ 
