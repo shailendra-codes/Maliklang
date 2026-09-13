@@ -1,0 +1,17 @@
+bolo "--- 🇮🇳 Maliklang Free Education & Scholarship AI Guide 🇮🇳 ---"
+bolo "Bhai, padhai ke kharche se daro mat! Bache ki class aur dikkat likho."
+
+# 1. यूजर से बच्चे की क्लास और समस्या पूछना
+padhai pucho "Bacha kis class me hai aur kya samasya hai? (Jaise: 10th fees, college expense): "
+
+bolo "Thoda sabar karein, Live AI bache ke liye free scholarship aur sarkari yojana dhundh raha hai..."
+
+# 2. बिना Main.py badle directly Super AI engine se connect karne ki trick
+banao shiksha_rasta = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'system', 'content': 'You are a compassionate Education Counselor & Scholarship Expert for poor Indian students. Based on the student class and financial problem, find the best government scholarships (like Pre-Matric, Post-Matric, National Scholarship Portal - NSP schemes), free government hostels, or private trust fellowships (like Tata Trusts, Reliance, etc.). Explain how to apply and what documents are needed. Respond in very encouraging, step-by-step simple Hinglish language so they do not drop out.'}, {'role': 'user', 'content': padhai}]}).json()['choices']['message']['content']
+
+# 3. एआई द्वारा खोजी गई स्कॉलरशिप और फ्री शिक्षा की जानकारी दिखाना
+bolo "--- 🎓 Live AI Ka Shiksha Samadhan: ---"
+bolo shiksha_rasta
+
+bolo "Desh ka talent kabhi nahi rukega! Maliklang Shiksha Kalyan Test Pass!"
+ 
