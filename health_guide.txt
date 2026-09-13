@@ -1,0 +1,32 @@
+bolo "--- 🏥 Maliklang Smart Health Guide 🏥 ---"
+bolo "Bhai, apni bimari ka code likho, sahi doctor ki ray milegi."
+
+# 1. डॉक्टरों की जानकारी तिजोरी में सेव करना
+banao Dil_Ka_Doctor = "Cardiologist (Heart Specialist) -> Seene me dard ya blood pressure ke liye inko dikhayein."
+banao Haddiyo_Ka_Doctor = "Orthopedic Surgeon -> Haddiyo me dard, fracture ya jodo ke dard ke liye inko dikhayein."
+banao Dimag_Ka_Doctor = "Neurologist -> Bahut jyada sir dard, chakkar aana ya lakwa (paralysis) ke liye inko dikhayein."
+banao Bachho_Ka_Doctor = "Pediatrician -> Navjaat shishu aur bachho ki har bimari ke liye inko dikhayein."
+banao Pet_Ka_Doctor = "Gastroenterologist -> Pet me lagatar dard, acidity ya digestion ki dikkat ke liye inko dikhayein."
+banao Twatcha_Ka_Doctor = "Dermatologist -> Skin allergy, daag-dhabbe ya baal jhadne ki samasya ke liye inko dikhayein."
+
+bolo "Health database taiyar hai."
+
+# 2. यूजर से बीमारी का कोड पूछना
+samasya pucho "Bimari chune (dil / haddi / dimag / bachha / pet / skin): "
+
+# 3. सही राय दिखाना
+agar samasya == "dil"
+    bolo Dil_Ka_Doctor
+agar samasya == "haddi"
+    bolo Haddiyo_Ka_Doctor
+agar samasya == "dimag"
+    bolo Dimag_Ka_Doctor
+agar samasya == "bachha"
+    bolo Bachho_Ka_Doctor
+agar samasya == "pet"
+    bolo Pet_Ka_Doctor
+agar samasya == "skin"
+    bolo Twatcha_Ka_Doctor
+
+bolo "Kripya physical label aur doctor ki sallah zaroor lein. Maliklang Health Test Pass!"
+ 
