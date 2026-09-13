@@ -1,0 +1,17 @@
+bolo "--- 🚀 Maliklang Super AI Career Counselor Live 🚀 ---"
+bolo "Bhai, bache ke man me jo bhi shauk ya sawal hai, khul kar likho!"
+
+# 1. यूजर (बच्चे) से उसकी रुचि या सवाल सीधे पूछना
+ruchi pucho "Aapko bada hokar kya karna pasand hai ya aapka kya sawal hai?: "
+
+bolo "Thoda sabar karo, Super AI bache ke bhavishya ka sabse behtareen rasta dhundh raha hai..."
+
+# 2. बिना Main.py badle directly Super AI engine se connect karne ki trick (System Instructions ke sath)
+banao career_roadmap = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'system', 'content': 'You are a professional Career Counselor for 14-year-old kids. Give practical, step-by-step career roadmaps based on the user interest. Explain academies, scopes, and how to protect their time. Always respond in simple, motivating Hinglish language.'}, {'role': 'user', 'content': ruchi}]}).json()['choices']['message']['content']
+
+# 3. AI का तैयार किया हुआ बिल्कुल सटीक रोडमैप स्क्रीन पर दिखाना
+bolo "--- ✨ Super AI Ka Career Roadmap Ye Hai Bhai: ---"
+bolo career_roadmap
+
+bolo "Bachhe ki khushi hi uski kamyabi hai! Super AI Career Test Pass!"
+ 
