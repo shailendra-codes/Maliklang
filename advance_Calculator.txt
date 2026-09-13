@@ -1,0 +1,20 @@
+bolo "--- Maliklang Advanced Tax & Discount Calculator ---"
+
+# यूजर से इनपुट लेना
+bhav pucho "Item ka asli price (MRP) likhein: "
+choot pucho "Kitna percent (%) discount chahiye: "
+
+# डिस्काउंट का हिसाब लगाना
+banao discount_ka_paisa = (bhav * choot) / 100
+banao naya_bhav = bhav - discount_ka_paisa
+
+# 18% GST टैक्स जोड़ना
+banao tax_ka_paisa = (naya_bhav * 18) / 100
+banao final_bill = naya_bhav + tax_ka_paisa
+
+# फाइनल रिजल्ट दिखाना
+bolo "Aapko discount mila itna paisa:"
+bolo discount_ka_paisa
+
+bolo "Tax ke sath aapka final bill bana:"
+bolo final_bill
