@@ -1,0 +1,17 @@
+bolo "--- Maliklang AI Agent Activation ---"
+bolo "Bhai, AI ab live ho raha hai..."
+
+# यूजर से सवाल पूछना
+sawaal pucho "Aap AI se kya puchna chahte hain: "
+
+bolo "Thoda ruko, AI dimag laga raha hai..."
+
+# बिना Main.py को बदले सीधे इंटरनेट से Gemini API या Free AI connect करने की ट्रिक
+banao ai_response = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'user', 'content': sawaal}]}).json()['choices'][0]['message']['content']
+
+# AI का जवाब स्क्रीन पर दिखाना
+bolo "AI ka uttar ye hai bhai: "
+bolo ai_response
+
+bolo "Maliklang AI Test Safal Hua!"
+ 
