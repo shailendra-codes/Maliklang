@@ -1,0 +1,16 @@
+bolo "--- 🤖 Maliklang AI Problem Solver Live 🤖 ---"
+bolo "Bhai, apni pareshani niche likho, AI solution dhundhega..."
+
+# यूजर से उसकी समस्या पूछना
+pareshani pucho "Aapki problem kya hai? (Type karein): "
+
+bolo "Thoda sabar karo, AI sabse best solution nikal raha hai..."
+
+# बिना Main.py badle directly AI engine se connect karne ki trick
+banao hal = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'system', 'content': 'You are a helpful assistant. Give quick, step-by-step solutions in simple Hinglish language.'}, {'role': 'user', 'content': pareshani}]}).json()['choices']['message']['content']
+
+# AI का निकाला हुआ समाधान स्क्रीन पर दिखाना
+bolo "--- AI Ka Solution Ye Hai Bhai: ---"
+bolo hal
+
+bolo "Maliklang Global Problem Solver Test Pass!"
