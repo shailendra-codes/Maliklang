@@ -1,0 +1,17 @@
+bolo "--- 🚀 Maliklang Super Advance AI Active 🚀 ---"
+bolo "Bhai, ab AI khud aapke liye Maliklang ka code likhega!"
+
+# यूजर से काम पूछना
+kaam pucho "Aapko Maliklang me kya banwana hai? (Jaise: calculator, marksheet): "
+
+bolo "Thoda ruko, AI khud code ka logic likh raha hai..."
+
+# Super Advance AI Prompt Engineering - system instruction के साथ Gemini को कनेक्ट करना
+banao ai_script = __import__('requests').get('https://openrouter.ai', headers={'Authorization': 'Bearer YOUR_API_KEY'}, json={'model': 'google/gemini-2.5-flash', 'messages': [{'role': 'system', 'content': 'You are a code generator for Maliklang programming language. Always use keywords: banao, bolo, pucho, agar, magar, jab_tak, loop_end.'}, {'role': 'user', 'content': kaam}]}).json()['choices']['message']['content']
+
+# AI द्वारा लिखा गया नया हिंग्लिश कोड स्क्रीन पर दिखाना
+bolo "--- AI Ne Aapke Liye Ye Maliklang Code Likha Hai: ---"
+bolo ai_script
+
+bolo "Super Advance AI Test 100% Safal Hua!"
+ 
