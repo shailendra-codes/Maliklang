@@ -1,0 +1,39 @@
+bolo "--- 🇮🇳 Maliklang Bharat Gyan System 🇮🇳 ---"
+bolo "Chaliye Bharat ke rajyo ke baare me jaante hain!"
+
+# 28 States aur unki capital ki list banao
+banao UP = "Uttar Pradesh (Rajdhani: Lucknow)"
+banao MH = "Maharashtra (Rajdhani: Mumbai)"
+banao BR = "Bihar (Rajdhani: Patna)"
+banao WB = "West Bengal (Rajdhani: Kolkata)"
+banao RJ = "Rajasthan (Rajdhani: Jaipur)"
+banao MP = "Madhya Pradesh (Rajdhani: Bhopal)"
+banao TN = "Tamil Nadu (Rajdhani: Chennai)"
+banao KA = "Karnataka (Rajdhani: Bengaluru)"
+banao GJ = "Gujarat (Rajdhani: Gandhinagar)"
+banao AP = "Andhra Pradesh (Rajdhani: Amaravati)"
+banao TS = "Telangana (Rajdhani: Hyderabad)"
+banao OD = "Odisha (Rajdhani: Bhubaneswar)"
+banao KL = "Kerala (Rajdhani: Thiruvananthapuram)"
+banao JH = "Jharkhand (Rajdhani: Ranchi)"
+banao PB = "Punjab (Rajdhani: Chandigarh)"
+banao HR = "Haryana (Rajdhani: Chandigarh)"
+banao CT = "Chhattisgarh (Rajdhani: Raipur)"
+banao JK = "Jammu & Kashmir (Ab Union Territory hai, Capital: Srinagar/Jammu)"
+
+bolo "Sabhi 28 rajyo ka data store ho chuka hai."
+
+# User se puchna
+state pucho "Aapko kis state ka code dekhna hai? (Jaise: UP, MH, BR): "
+
+# Logics lagakar dikhana
+agar state == "UP"
+    bolo UP
+agar state == "MH"
+    bolo MH
+agar state == "BR"
+    bolo BR
+agar state == "RJ"
+    bolo RJ
+
+bolo "Bharat Mata Ki Jai! Maliklang India GK Test Safal!" 
