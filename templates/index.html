@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaralConnect - सरल और सुरक्षित</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; }
+        .btn-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        .btn { flex: 1; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-align: center; text-decoration: none; color: white; }
+        .btn-msg { background-color: #3498db; }
+        .btn-video { background-color: #2ecc71; }
+        .btn-meet { background-color: #9b59b6; }
+        #chat-box { height: 250px; border: 1px solid #ddd; border-radius: 8px; padding: 10px; overflow-y: auto; background: #fafafa; margin-bottom: 10px; }
+        input[type="text"] { width: 75%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
+        button { width: 20%; padding: 10px; background: #2c3e50; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🚀 Maliklang Super AI Connect</h1>
+    <p style="text-align: center; color: #7f8c8d;">🔒 मिलिट्री-ग्रेड कोड और AI स्पैम प्रोटेक्शन से सुरक्षित</p>
+
+    <div class="btn-group">
+        <button class="btn btn-msg" onclick="focusChat()">💬 संदेश</button>
+        <a href="#" class="btn btn-video" onclick="alert('सुरक्षित वीडियो कॉल शुरू हो रहा है...')">📹 वीडियो कॉल</a>
+        <a href="#" class="btn btn-meet" onclick="alert('ज़ूम मीटिंग रूम तैयार हो रहा है...')">👥 ज़ूम मीटिंग</a>
+    </div>
+
+    <div>
+        <label><b>अपनी अनोखी पहचान (ID) डालें:</b></label><br>
+        <input type="text" id="clientId" placeholder="जैसे: shailendra@connect" style="width: 95%; margin-bottom: 10px;"><br>
+        <button onclick="connectChat()" style="width: 100%; background: #27ae60; margin-bottom: 15px;">सुरक्षित नेटवर्क से जुड़ें</button>
+    </div>
+
+    <div id="chat-box"></div>
+   
+    <div style="display: flex; justify-content: space-between;">
+        <input type="text" id="messageInput" placeholder="अपना संदेश यहाँ लिखें..." disabled>
+        <button id="sendBtn" onclick="sendMessage()" disabled>भेजें</button>
+    </div>
+</div>
+
+<script>
+    let ws;
+    function connectChat() {
+        const id = document.getElementById('clientId').value;
+        if(!id) { alert('कृपया अपनी पहचान आईडी डालें!'); return; }
+        ws = new WebSocket(`ws://127.0.0.1:8000/ws/${id}`);
+        ws.onmessage = function(event) {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML += `<div>${event.data}</div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        };
+        document.getElementById('messageInput').disabled = false;
+        document.getElementById('sendBtn').disabled = false;
+        alert('आप सुरक्षित रूप से जुड़ चुके हैं!');
+    }
+    function sendMessage() {
+        const input = document.getElementById('messageInput');
+        if(input.value) {
+            ws.send(input.value);
+            input.value = '';
+        }
+    }
+    function focusChat() { document.getElementById('messageInput').focus(); }
+</script>
+</body>
+</html>
+ 
