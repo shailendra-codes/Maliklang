@@ -1,0 +1,17 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secrets and Environment Variables
+.env
+.venv
+env/
+venv/
+ENV/
+secrets.json
+
+# OS files
+.DS_Store
+Thumbs.db
+ 
