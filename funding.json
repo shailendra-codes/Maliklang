@@ -1,4 +1,4 @@
- {
+{
   "version": "1.0.0",
   "entity": {
     "type": "Individual",
@@ -6,15 +6,15 @@
     "name": "Shailendra",
     "email": "shailendr3489@gmail.com",
     "description": "Maliklang is an open-source Hinglish programming interpreter.",
-    "webpage": "https://github.com/shailendra-codes/Maliklang"
+    "webpageUrl": "https://github.com/shailendra-codes/Maliklang"
   },
   "projects": [
     {
       "guid": "maliklang",
       "name": "Maliklang",
       "description": "An open-source Hinglish programming interpreter.",
-      "webpage": "https://github.com/shailendra-codes/Maliklang",
-      "repository": "https://github.com/shailendra-codes/Maliklang",
+      "webpageUrl": "https://github.com/shailendra-codes/Maliklang",
+      "repositoryUrl": "https://github.com/shailendra-codes/Maliklang",
       "licenses": ["MIT"],
       "tags": ["programming", "AI", "Hinglish"]
     }
@@ -28,4 +28,3 @@
     }
   ]
 }
- 
