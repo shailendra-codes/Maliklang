@@ -52,6 +52,11 @@ python main.py
 ```
 *(नोट: किसी भी स्क्रिप्ट फ़ाइल को चलाने के लिए, `main.py` में फ़ाइल का नाम बदलें और रन करें)*
 
+## 🤝 इस मिशन का हिस्सा बनें (Contribute)
+
+मलिकलांग एक ओपन-सोर्स प्रोजेक्ट है और हम आपके सुझावों और कोड का स्वागत करते हैं। प्रोजेक्ट में योगदान देने के नियम और तरीके जानने के लिए कृपया हमारी [ Contribution Guide ](CONTRIBUTING.md) पढ़ें।
+ 
+
 ---
 Developed with ❤️ by **shailendra-codes** - *Making Coding Accessible for Everyone!*
  
