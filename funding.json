@@ -7,24 +7,6 @@
     "email": "shailendr3489@gmail.com",
     "description": "Maliklang is an open-source Hinglish programming interpreter.",
     "webpageUrl": "https://github.com/shailendra-codes/Maliklang"
-  },
-  "projects": [
-    {
-      "guid": "maliklang",
-      "name": "Maliklang",
-      "description": "An open-source Hinglish programming interpreter.",
-      "webpageUrl": "https://github.com/shailendra-codes/Maliklang",
-      "repositoryUrl": "https://github.com/shailendra-codes/Maliklang",
-      "licenses": ["MIT"],
-      "tags": ["programming", "AI", "Hinglish"]
-    }
-  ],
-  "funding_channels": [
-    {
-      "guid": "github-sponsors",
-      "type": "Other",
-      "address": "https://github.com",
-      "description": "Support Maliklang."
-    }
-  ]
+  }
 }
+ 
