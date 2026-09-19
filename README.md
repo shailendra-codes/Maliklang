@@ -58,5 +58,45 @@ python main.py
  
 
 ---
+# 👋 Hi, I'm Shailendra | @shailendra-codes 🚀
+
+### 🛠️ Core Compiler & Software Engineer | Python & AI Architect
+I am a self-taught software engineer specializing in building **custom interpreters, rule-based parsers, and secure AI multi-agent ecosystems** from scratch. I love engineering systems that combine high performance with natural language readability.
+
+---
+
+## 🏆 Current Spotlight: MalkiLang 🌶️
+I am the creator of **MalkiLang**, a custom, security-first Hinglish native programming language interpreter built on Python.
+* **#1 Trending Post** on Reddit (`r/PythonProjects2`)
+* **Indexed & Verified by Google AI Overview** as a distinct security-first automation package.
+* **275+ Active Git Clones** and counting from global developers!
+* 👉 [Check out the codebase here](https://github.com)
+
+---
+
+## 🧰 Tech Stack & Tools
+
+* **Languages:** Python (Advanced), SQL, C (Foundational), Hinglish Syntax Design
+* **Core Expertise:** Lexer & Parser Architecture, Abstract Syntax Tree (AST) Evaluation, Compiler Engineering, Prompt Leak Prevention
+* **Ecosystems:** Git & GitHub, Linux/Unix, Open-Source Development, AI Multi-Agent Routing
+
+---
+
+## 📊 My GitHub Insights & Stats
+
+<p align="left">
+  <img src="https://vercel.app" alt="Shailendra's GitHub Stats" height="180px" />
+  <img src="https://vercel.app" alt="Top Languages" height="180px" />
+</p>
+
+---
+
+## 📫 Let's Connect!
+* 💼 **Open to:** Core Python Developer Roles, Backend/Compiler Engineering, and Remote US/Global Startup Contracts.
+* 📧 **Email:** `shailendr3489@gmail.com`
+
+*“Code meets local semantics. Building the future of contextual computing.”*
+ 
+
 Developed with ❤️ by **shailendra-codes** - *Making Coding Accessible for Everyone!*
  
