@@ -54,8 +54,9 @@ manager = SuperConnectionManager()
 
 @app.get("/")
 async def get_home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
-
+    
+return templates.TemplateResponse(request=request, name="index.html")
+ 
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint(websocket: WebSocket, client_id: str):
     await manager.connect(websocket)
