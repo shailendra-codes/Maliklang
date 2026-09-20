@@ -3,4 +3,6 @@ fastapi
 uvicorn
 cryptography
 requests
+jinja2
+
  
