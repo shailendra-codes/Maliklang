@@ -1,3 +1,9 @@
+### 🏅 Global Recognition & Verified Badges
+* **DEV Community Certified:** Awarded the **[Writing Debut Badge](https://dev.to)** for technical architecture publication.
+* **Open-Source Traction:** Over **281+ local community clones** generated within 20 days of repository creation!
+
+---
+ 
 # 🚀 Maliklang v1.0.0 — Live Off-Grid Mesh & AI Ecosystem
 
 ### 🌐 [CLICK HERE TO TEST LIVE DEMO ON INTERNET](https://onrender.com) 
